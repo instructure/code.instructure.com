@@ -17,7 +17,7 @@
   }
   #content {
     width: 80%;
-    min-width: 300px;
+    min-width: 325px;
     margin: 0 auto;
   }
   div#notification {
@@ -100,79 +100,107 @@
     text-align: center;
     padding: 10px 0 20px 0;
   }
-  #canvas, #lti {
+  a.project.platform {
     border-bottom-color: #254284;
   }
-  #instui, #pdf-annotate {
+  a.project.js {
     border-bottom-color: #F5A623;
   }
-  #switchman {
+  a.project.ruby {
     border-bottom-color: #D0021B;
   }
-  #canvaskit, #canvas_api {
+  a.project.node {
     border-bottom-color: #F8E71C;
   }
-  #inst_jobs, #dockerfiles {
+  a.project.java {
+    border-bottom-color: #2D882D;
+  }
+  a.project.other {
     border-bottom-color: #BD10E0;
   }
   </style>
   <div id="content">
   <h1>Instructure Open Source</h1>
   <div id="notification">
-    <p><strong>Open source is at the heart of <a href="https://instructure.com">Instructure</a>.</strong> Our primary product, <a href="https://www.canvaslms.com">Canvas</a>, is fully open-source and we have numerous supporting projects. Check out some of our featured projects below or the full listing on <a href="https://github.com/instructure">our GitHub page</a>. Interested in helping? <a href="https://instructure.com/careers" target="_blank" title="We're hiring!">Join Instructure!</a></p>
+    <p><strong>Open source is at the heart of <a href="https://instructure.com">Instructure</a>.</strong> Our primary product, <a href="https://www.canvaslms.com">Canvas</a>, is fully open-source and we have numerous supporting projects. Check out some of our most popular projects below or the full listing on <a href="https://github.com/instructure">our GitHub page</a>. Interested in helping? <a href="https://instructure.com/careers" target="_blank" title="We're hiring!">Join Instructure!</a></p>
   </div>
 
   <h2>Featured</h2>
 
-  <a href="https://github.com/instructure/canvas-lms" class="project" id="canvas">
+  <a href="https://github.com/instructure/canvas-lms" class="platform project">
     <h3>Canvas LMS</h3>
     <p>Canvas is the open-source learning management system used by thousands of schools globally.</p>
   </a>
 
-  <a href="https://github.com/instructure/instructure-ui" class="project" id="instui">
+  <a href="https://github.com/instructure/instructure-ui" class="js project">
     <h3>InstructureUI</h3>
-    <p>Our React component library that takes care of everything from styling to accessibility for you.</p>
+    <p>Our React component library and live style guide takes care of everything from design to accessibility for you.</p>
   </a>
 
-  <a href="https://github.com/instructure/switchman" class="project" id="switchman">
+  <a href="https://github.com/instructure/switchman" class="ruby project">
     <h3>Switchman</h3>
     <p>Transparently support multi-tenant applications with database sharding.</p>
   </a>
 
   <h2>Web</h2>
 
-  <a href="https://github.com/instructure/analytics" class="project" id="pdf-annotate">
-    <h3>pdf-annotate.js</h3>
-    <p>An annotation layer for pdf.js.</p>
+  <a href="https://github.com/instructure/inst-jobs" class="ruby project">
+    <h3>Inst Jobs</h3>
+    <p>A battle-hardened fork of Delayed Jobs that supports Canvas's scale of tens of millions of jobs per day.</p>
   </a>
 
-  <a href="https://github.com/instructure/ims-lti" class="project" id="lti">
+  <a href="https://github.com/instructure/shackles" class="ruby project">
+    <h3>Shackles</h3>
+    <p>Add multiple database environments and overrides to ActiveRecord for least-privilege best practices.</p>
+  </a>
+
+  <a href="https://github.com/instructure/pdf-annotate.js" class="js project">
+    <h3>pdf-annotate.js</h3>
+    <p>Does what it says on the tin: an annotation layer for pdf.js.</p>
+  </a>
+
+  <a href="https://github.com/instructure/outrigger" class="ruby project">
+    <h3>Outrigger</h3>
+    <p>Tag your ActiveRecord migrations so that you can have complete control and zero downtime deploys.</p>
+  </a>
+
+  <a href="https://github.com/instructure/i18nema" class="other project">
+    <h3>I18nema</h3>
+    <p>A fast drop-in i18n backend replacement for Rails that doesn't clog the garbage collector.</p>
+  </a>
+
+  <a href="https://github.com/instructure/ims-lti" class="ruby project">
     <h3>IMS LTI</h3>
     <p>A Ruby library to help implement IMS LTI tool consumers and providers.</p>
   </a>
 
-  <a href="https://github.com/instructure/inst-jobs" class="project" id="inst_jobs">
-    <h3>Inst Jobs</h3>
-    <p>An Instructure-maintained fork of Delayed Jobs.</p>
-  </a>
-
   <h2>Mobile</h2>
 
-  <a href="https://github.com/instructure/CanvasKit" class="project" id="canvaskit">
-    <h3>CanvasKit</h3>
-    <p>Canvas library for Cocoa.</p>
-  </a>
-
-  <a href="https://github.com/instructure/CanvasAPI" class="project" id="canvas_api">
+  <a href="https://github.com/instructure/CanvasAPI" class="java project">
     <h3>CanvasAPI</h3>
-    <p>CanvasAPI is an Android library that will help you integrate your own third party app with Canvas by Instructure.</p>
+    <p>An Android library to help you integrate your own third party app with Canvas by Instructure.</p>
   </a>
 
   <h2>Other</h2>
 
-  <a href="https://github.com/instructure/dockerfiles" class="project" id="dockerfiles">
-    <h3>Dockerfiles</h3>
-    <p>A set of base docker images you can use to bootstrap your project.</p>
+  <a href="https://github.com/instructure/straitjacket" class="node project">
+    <h3>Straitjacket</h3>
+    <p>A restricted code execution framework to safely run someone else's code in any language.</p>
+  </a>
+
+  <a href="https://github.com/instructure/gergich" class="ruby project">
+    <h3>Gergich</h3>
+    <p>A command-line tool to easily post comments on a Gerrit review from a CI environment.</p>
+  </a>
+
+  <a href="https://github.com/instructure/tf_versioned_lambda" class="other project">
+    <h3>Versioned Lambda</h3>
+    <p>A Terraform module to automatically build and deploy AWS Lambda functions in a few languages.</p>
+  </a>
+
+  <a href="https://github.com/instructure/CheckYourSSeLf" class="ruby project">
+    <h3>CheckYourSSeLf</h3>
+    <p>A friendly Slack bot that checks your Amazon AWS accounts and remote urls for expiring SSL certificates.</p>
   </a>
 
   <div class="btn">
